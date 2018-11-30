@@ -18,7 +18,7 @@ if ($con->connect_error) {
 	$flavor=$json->result->parameters->flavor;
 	$response=new \stdClass();
 	
-	$sql="select * from suggestions;
+	$sql="select * from suggestions";
 
  //    $query=mysqli_query($con,$query);
  //    $speec=" ";

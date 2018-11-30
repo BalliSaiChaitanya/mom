@@ -19,7 +19,7 @@ if($method=="POST"){
 	$response=new \stdClass();
 	
 	$sql="select * from suggestions";
-	$result = $conn->query($sql);
+	$result = mysqli_query($conn, $sql);
  //    $query=mysqli_query($con,$query);
  //    $speec=" ";
  //    while($row=mysqli_fetch_array($sql))

@@ -10,7 +10,7 @@ if($method=="POST"){
 	$response=new \stdClass();
 
 	
-	$rec=json_decode(file_get_contents('http://innovationcenter.gitam.edu/fm.php?p=test3%2Finteraction&dl=data.json'));
+	$rec=json_decode(file_get_contents('https://raw.githubusercontent.com/mombotic/mom/sub/data.json'));
 	
 
 	switch ($flavor) {

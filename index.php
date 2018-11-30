@@ -19,7 +19,7 @@ if ($con->connect_error) {
 	$response=new \stdClass();
 	
 	$sql="select * from suggestions";
-
+	$result = $conn->query($sql);
  //    $query=mysqli_query($con,$query);
  //    $speec=" ";
  //    while($row=mysqli_fetch_array($sql))
@@ -27,7 +27,7 @@ if ($con->connect_error) {
  //        $speec =$speec." ".$row['name'];
  //    }
  //    $speech=$speec;
-	echo $sql;
+	echo $result;
     $speech="shit shit shitty";
 
     $response->speech=$speech;

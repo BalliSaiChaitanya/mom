@@ -15,10 +15,10 @@ if($method=="POST"){
 
 	switch ($flavor) {
 		case "fruits":
-			$speech="I would like you to try ".$rec->fruits;
+			$speech=echo "I would like you to try ".$rec->fruits;
 			break;
 		case "chocolate":
-			$speech="I would like you to try ".$rec->chocolate;
+			$speech=echo "I would like you to try ".$rec->chocolate;
 			break;
 		default:
 			$speech="Try oreo";

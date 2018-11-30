@@ -19,7 +19,7 @@
     $rec = json_decode(curl_exec($curlSession));
     curl_close($curlSession);
 	echo "Hello this is test";
-	
+	echo get_remote_data('https://github.com/mombotic/mom/blob/sub/data.json');
 	
 
 // 	switch ($flavor) {

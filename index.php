@@ -12,7 +12,9 @@ if($method=="POST"){
 
 
 	$rec=json_decode(file_get_contents('https://github.com/mombotic/mom/blob/master/data.json'));
-	echo $rec;
+
+	$aa=$rec->fruits;
+
 	switch ($flavor) {
 		case "fruits":
 			$speech="I would like you to try ".$rec->fruits;
@@ -26,7 +28,7 @@ if($method=="POST"){
 	}
 
 
-	$response->speech=$speech;
+	$response->speech=$speech.$aa;
 	$response->displayText=$speech;	
 	$response->source="webhook";
 	echo json_encode($response);

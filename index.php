@@ -18,7 +18,7 @@
 
     $rec = json_decode(curl_exec($curlSession));
     curl_close($curlSession);
-	echo $rec;
+	echo "Hello this is test";
 	
 	
 

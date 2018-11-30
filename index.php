@@ -12,7 +12,7 @@ if($method=="POST"){
 
 
 	$curlSession = curl_init();
-    curl_setopt($curlSession, CURLOPT_URL, 'http://innovationcenter.gitam.edu/test3/interaction/data.json');
+    curl_setopt($curlSession, CURLOPT_URL, 'https://github.com/mombotic/mom/blob/sub/data.json');
     curl_setopt($curlSession, CURLOPT_BINARYTRANSFER, true);
     curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, true);
 

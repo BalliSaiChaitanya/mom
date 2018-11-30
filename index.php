@@ -1,5 +1,15 @@
 <?php
-	require_once('../dbconnect.php');
+$servername = "192.168.64.145";
+$username = "innovationcenter";
+$password = "innovation123$$";
+$dbname = "innovationcenter_mom";
+
+// Create connection
+$con = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+} 
 	$method = $_SERVER['REQUEST_METHOD'];
 if($method=="POST"){
 	$requestBody=file_get_contents('php://input');

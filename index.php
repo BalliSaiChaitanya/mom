@@ -11,7 +11,7 @@ if($method=="POST"){
 
 
 
-	$rec=json_decode(file_get_contents('https://drive.google.com/open?id=1YquiPk5Nmab_dkxyluvTXi03Mag0PLCC'));
+	$rec=json_decode(file_get_contents('https://github.com/mombotic/mom/blob/master/data.json'));
 
 	switch ($flavor) {
 		case "fruits":

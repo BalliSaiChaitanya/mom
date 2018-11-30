@@ -10,7 +10,7 @@
 // 	$response=new \stdClass();
 
 	echo "Hello this is test yayayayaya";
-	echo file_get_contents('https://github.com/mombotic/mom/blob/sub/data.json');
+	echo file_get_contents('https://raw.githubusercontent.com/mombotic/mom/sub/data.json');
 	
 
 // 	switch ($flavor) {

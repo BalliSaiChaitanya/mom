@@ -11,7 +11,7 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 } 
 	$method = $_SERVER['REQUEST_METHOD'];
-//if($method=="POST"){
+if($method=="POST"){
 	$requestBody=file_get_contents('php://input');
 	$json=json_decode($requestBody);
 	$text=$json->result->parameters->text;
@@ -27,17 +27,17 @@ if ($con->connect_error) {
  //        $speec =$speec." ".$row['name'];
  //    }
  //    $speech=$speec;
-	echo $result;
-    $speech="shit shit shitty";
+	//echo $result;
+    $speech=$result;
 
     $response->speech=$speech;
 	$response->displayText=$speech;	
 	$response->source="webhook";
-	//echo json_encode($response);
-// }
-// else{
-// 	echo "method not allowed";
-// }
+	echo json_encode($response);
+ }
+ else{
+ 	echo "method not allowed";
+ }
 
     
 ?>

@@ -12,13 +12,13 @@ if($method=="POST"){
 
 
 	$rec=json_decode(file_get_contents('https://github.com/mombotic/mom/blob/master/data.json'));
-
+	echo $rec;
 	switch ($flavor) {
 		case "fruits":
-			$speech=echo "I would like you to try ".$rec->fruits;
+			$speech="I would like you to try ".$rec->fruits;
 			break;
 		case "chocolate":
-			$speech=echo "I would like you to try ".$rec->chocolate;
+			$speech="I would like you to try ".$rec->chocolate;
 			break;
 		default:
 			$speech="Try oreo";

@@ -15,10 +15,10 @@ if($method=="POST"){
 
 	switch ($flavor) {
 		case "fruits":
-			$response->speech="I would like you to try ".$rec->fruits;
+			$speech="I would like you to try ".$rec->fruits;
 			break;
 		case "chocolate":
-			$response->speech="I would like you to try ".$rec->chocolate;
+			$speech="I would like you to try ".$rec->chocolate;
 			break;
 		default:
 			$speech="Try oreo";
@@ -26,7 +26,8 @@ if($method=="POST"){
 	}
 
 
-	
+	$response->speech="";
+	$response->displayText="";	
 	$response->source="webhook";
 	echo json_encode($response);
 }else{

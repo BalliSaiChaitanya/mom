@@ -11,12 +11,9 @@ if($method=="POST"){
 
 
 
-	$rec=json_decode(file_get_contents('http://innovationcenter.gitam.edu/test3/interaction/data.json'));
+	$rec=json_decode(file_get_contents("http://innovationcenter.gitam.edu/test3/interaction/data.json"));
 	
 	
-	extension=php_openssl.dll
-
-allow_url_fopen = On
 
 	switch ($flavor) {
 		case "fruits":

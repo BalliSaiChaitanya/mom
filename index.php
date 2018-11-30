@@ -18,7 +18,8 @@ if ($con->connect_error) {
 	$flavor=$json->result->parameters->flavor;
 	$response=new \stdClass();
 	
-	$sql="select * from suggestions where cat = ".$flavour."";
+	$sql="select * from suggestions;
+
  //    $query=mysqli_query($con,$query);
  //    $speec=" ";
  //    while($row=mysqli_fetch_array($sql))

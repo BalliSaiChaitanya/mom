@@ -18,7 +18,8 @@ if($method=="POST"){
 	$flavor=$json->result->parameters->flavor;
 	$response=new \stdClass();
 	
-	$sql="select * from suggestions where cat = ".$flavour."";
+	$sql="select * from suggestions";
+	$result = $conn->query($sql);
  //    $query=mysqli_query($con,$query);
  //    $speec=" ";
  //    while($row=mysqli_fetch_array($sql))
@@ -26,17 +27,19 @@ if($method=="POST"){
  //        $speec =$speec." ".$row['name'];
  //    }
  //    $speech=$speec;
-	echo $sql;
-    $speech="shit shit shitty";
+	//echo $result;
+    $speech=$result;
 
     $response->speech=$speech;
 	$response->displayText=$speech;	
 	$response->source="webhook";
 	echo json_encode($response);
+
 }
 else{
 	echo "method not allowed";
 }
+
 
     
 ?>

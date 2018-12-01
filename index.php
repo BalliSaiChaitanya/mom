@@ -13,14 +13,35 @@ if($method=="POST"){
 	
 
 	switch ($flavor) {
-		case "fruits":
-			$speech="I would like you to try ".$rec->fruits;
+		case "healthy":
+			$speech="I would like you to try ".$rec->healthy;
 			break;
-		case "chocolate":
-			$speech="I would like you to try ".$rec->chocolate;
+		case "signature":
+			$speech="I would like you to try ".$rec->signature;
+			break;
+		case "fruit":
+			$speech="I would like you to try ".$rec->fruit;
+			break;
+		case "american classic":
+			$speech="I would like you to try ".$rec->american;
+			break;
+		case "premium":
+			$speech="I would like you to try ".$rec->premium;
+			break;
+		case "frappe":
+			$speech="I would like you to try ".$rec->frappe;
+			break;
+		case "banana":
+			$speech="I would like you to try ".$rec->banana;
+			break;
+		case "special":
+			$speech="I would like you to try ".$rec->special;
+			break;
+		case "cookies":
+			$speech="I would like you to try ".$rec->cookies;
 			break;
 		default:
-			$speech="Try oreo";
+			$speech="I am afraid we dont have any such type available.Try something else.";
 			break;
 	}
 
